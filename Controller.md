@@ -6,6 +6,8 @@
 
         @Html.ValidationSummary(false, "", new { @class = "text-danger", style = "list-style-position: inside;" })
 
+        @Html.EditorFor(model => model.FilePath, new { htmlAttributes = new { @class = "form-control", type = "file" } })
+        
         // code below
 
     }
